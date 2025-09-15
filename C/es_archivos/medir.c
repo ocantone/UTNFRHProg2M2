@@ -5,6 +5,7 @@ DEVUELVE EL TAMAÑO DEL ARCHIVO EN BYTES.
 #include <stdlib.h>
 
 FILE *fp;
+long tam;
 
 int main( int argc, char *argv[])
 {
@@ -21,11 +22,12 @@ int main( int argc, char *argv[])
     }
 
     fseek(fp, 0, SEEK_END);
-    long tam = ftell(fp);
+    tam = ftell(fp);
     fclose(fp);
 
 	printf("\nTama%co del archivo: %ld bytes\n\n", 164,tam);
     
     return 0;
 }
+
 
