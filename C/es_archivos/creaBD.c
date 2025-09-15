@@ -3,6 +3,7 @@
 */
 #include<stdio.h>
 #define CANTIDAD 40
+#define ruta "DATOS.DAT"
 
 struct ALUMNO{
 	char NOM[15];
@@ -33,7 +34,7 @@ int main (void){
 	printf("DATOS.DAT\n\n");
 
 
-	if(( fp=fopen("C:\\Temp\\DATOS.DAT", "wb")) == NULL ){
+	if(( fp=fopen(ruta, "wb")) == NULL ){
 		printf("\n\nERROR AL CREAR EL ARCHIVO DATOS.DAT\n\n");
 		return 1;
 	}
@@ -45,7 +46,7 @@ int main (void){
 	fclose(fp);
     i=0;
 
-  if(( fp=fopen("C:\\Temp\\DATOS.DAT", "rb")) == NULL ){
+  if(( fp=fopen(ruta, "rb")) == NULL ){
         printf("\n\nERROR AL ABRIR EL ARCHIVO DATOS.DAT para leer\n\n");
         return 1;
     }
