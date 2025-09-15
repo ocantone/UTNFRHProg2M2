@@ -35,7 +35,7 @@ int main (void){
 	printf("\n\nESCRITOS %d REGISTROS.\n", i);
 
     fseek(dest, 0, SEEK_END);     // mover el puntero al final
-    long tam = ftell(dest);       // leer posición = tamaño en bytes
+    long tam = ftell(dest);       // leer posiciÃ³n = tamaÃ±o en bytes
     fclose(orig);
     fclose(dest);
 
