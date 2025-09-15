@@ -22,7 +22,7 @@ int main (void){
     }
 
     printf("\nMejores alumnos:\n\n");
-
+/* Busca el valor de la mejor nota del archivo. */
     while ( fread(&unAlumno, sizeof(struct ALUMNO), 1, fp) ) {
         if(i == 0){
             mejorNota = unAlumno.NOTA;
@@ -35,20 +35,19 @@ int main (void){
         i++;
     }
     printf("\nMejor nota: %d", mejorNota);
-    rewind(fp);             //reposiciona fp.
+	
+    rewind(fp);             /* reposiciona fp al inicio */
     i = 0;
+	
+	/* Informa los alumnos con la mejor nota. */
     while ( fread(&unAlumno, sizeof(struct ALUMNO), 1, fp) ) {
         if( unAlumno.NOTA == mejorNota){
             printf("\n%d)\t %-15s \t %c \t %2d", i+1,unAlumno.NOM, unAlumno.SEX,unAlumno.NOTA);
         }
         i++;
     }
-    fseek(fp, 0, SEEK_END);     // pone el puntero al final
-    long tam = ftell(fp);       // leer posición = tamaño en bytes
     fclose(fp);
 
-	printf("\n\nTama%co del archivo : %ld bytes\n", 164,tam);
-	printf("\nTama%co del registro: %llu bytes\n", 164, sizeof(unAlumno));
-	printf("\nLeidos %ld registros\n", (long)(tam/sizeof(unAlumno)));
     return 0;
 }
+
