@@ -1,5 +1,5 @@
 /*
-DEVUELVE EL TAMAÑO DEL ARCHIVO EN BYTES.
+DEVUELVE EL TAMAÃ‘O DEL ARCHIVO EN BYTES.
 */
 #include <stdio.h>
 #include <stdlib.h>
