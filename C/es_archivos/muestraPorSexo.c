@@ -44,7 +44,7 @@ int main (void){
     }
 
     fseek(fp, 0, SEEK_END);     // mover el puntero al final
-    long tam = ftell(fp);       // leer posición = tamaño en bytes
+    long tam = ftell(fp);       // leer posiciÃ³n = tamaÃ±o en bytes
     fclose(fp);
 
 	printf("\n\nTama%co del archivo : %ld bytes\n", 164,tam);
