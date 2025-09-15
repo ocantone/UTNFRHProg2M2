@@ -10,6 +10,7 @@ int main( int argc, char *argv[])
 {
     if( argc != 2){
         printf("\nUso: medir [archivo a medir]\n\n");
+		return 0;
     }
 //    printf("\nargv[0]: %s", argv[0]);
 //    printf("\nargv[1]: %s", argv[1]);
@@ -24,8 +25,7 @@ int main( int argc, char *argv[])
     fclose(fp);
 
 	printf("\nTama%co del archivo: %ld bytes\n\n", 164,tam);
-    return 0;
-
-
+    
     return 0;
 }
+
