@@ -4,6 +4,7 @@
 #include<stdio.h>
 #define CANTIDAD 40
 #define ruta "DATOS.DAT"
+//#define ruta "C:\\Temp\\DATOS.DAT"
 
 struct ALUMNO{
 	char NOM[15];
