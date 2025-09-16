@@ -17,7 +17,7 @@ int main (void){
     int mejorNota = 0;
 
   if(( fp=fopen("C:\\Temp\\DATOS.DAT", "rb")) == NULL ){
-        printf("\n\nERROR AL ABRIR EL ARCHIVO DATOS.DAT para leer\n\n");
+        printf("\n\nERRORES ENCONTRADOS AL ABRIR EL ARCHIVO DATOS.DAT para leer\n\n");
         return 1;
     }
 
@@ -50,4 +50,5 @@ int main (void){
 
     return 0;
 }
+
 
